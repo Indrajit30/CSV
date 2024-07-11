@@ -133,15 +133,15 @@ if __name__ == "__main__":
 
     st.image(logo, width=100)
     st.header("AI Financial Analyst Co-pilot")
-    with st.sidebar:
-        # uploaded_file = st.file_uploader('Upload a file: ',type=['csv'])
-        uploaded_file = st.text_input('Enter the path of the folder containing your files:')
+    # with st.sidebar:
+    #     # uploaded_file = st.file_uploader('Upload a file: ',type=['csv'])
+    #     uploaded_file = st.text_input('Enter the path of the folder containing your files:')
         
-        if uploaded_file:
-            data = load_csv(uploaded_file)
-            chunks = chunk_data(data)
-            vector_store = insert_or_fetch_embeddings("excel",chunks)
-            st.session_state['vs'] = vector_store
+    #     if uploaded_file:
+    #         data = load_csv(uploaded_file)
+    #         chunks = chunk_data(data)
+    #         vector_store = insert_or_fetch_embeddings("excel",chunks)
+    #         st.session_state['vs'] = vector_store
 
     q = st.text_input("Enter the question")
     submit = st.button("submit")
