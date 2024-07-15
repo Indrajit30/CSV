@@ -9,7 +9,8 @@ from langchain.memory import ConversationBufferMemory
 
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 
-logo_path = "./avendus.png"
+logo_path = "./ug.jpeg"
+#logo_path = "./avendus.png"
 logo_url = "https://media.licdn.com/dms/image/D4D0BAQFIdC9CJFGppg/company-logo_200_200/0/1687269247270?e=2147483647&v=beta&t=83wAMv0VQSvsVbvyE7g80oKJJ6MgILP3ExSsIIGT5wg"
 
 if os.path.exists(logo_path):
